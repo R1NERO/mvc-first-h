@@ -1,0 +1,76 @@
+﻿@page
+@model mvc_first_h.Views.Home.IndexModel
+@{
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .profile-container {
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .profile-surname {
+            font-size: 18px;
+            color: #555;
+            margin: 5px 0;
+        }
+
+        .profile-info {
+            font-size: 16px;
+            line-height: 1.5;
+            margin: 20px 0;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="profile-container">
+        <!-- Use a relative or correctly formatted path for the image -->
+        <img src=""images/img.av.png"" alt="Profile Photo" class="profile-photo">
+        
+        <h1 class="profile-name">Devon</h1>
+        <h2 class="profile-surname">Swift</h2>
+        <p class="profile-info">
+            <strong>About:</strong><br>
+            Devon Swift is an experienced full-stack web developer with a passion for creating intuitive, dynamic, and user-friendly websites and applications. With over 5 years in the industry, Devon has developed expertise in a variety of technologies, including HTML, CSS, JavaScript, and Python. He is proficient in both front-end and back-end development, with strong knowledge in frameworks like React, Node.js, and Django.
+        </p>
+        <a href="/person/hobby">Hobby</a>
+    </div>
+
+</body>
+</html>
